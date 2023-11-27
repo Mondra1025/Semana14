@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        {% endblock %}
+        | Alberto Mondragon
+    </title>
+</head>
+<body>
+    <h1>Proyecto Web LP3 | Alberto Mondragon</h1>
+    <hr/>
+    <ul>
+        <li>
+            <a href="/">Inicio</a>
+        </li>
+        <li>
+            <a href="/saludo">Mensaje de Saludo</a>
+        </li>
+        <li>
+            <a href="/rango"> Monstrar Números [a,b]</a>
+        </li>
+        <li>
+            <a href="/rango2/10/15">Mostrar Números [10,15]</a>
+        </li>
+    </ul>
+
+    <div id="content">
+        {% block content %}
+            <strong>Contenido en layout (padre)</strong>
+        {% endblock%}
+    </div>
+    <footer>
+        UNTELS-Lenguaje de Programación III &copy; Alberto Mondragon
+    </footer>
+</body>
+</html>
